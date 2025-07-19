@@ -4,7 +4,7 @@ switch (country) {
     case "China" :
         price = 100;
         break;
-    case "Chile " :
+    case "Chile" :
         price = 250;
         break;
     case "Australia":
@@ -13,7 +13,8 @@ switch (country) {
     case "Jamaica":
         price = 120;
         break;
-    default: "Sorry, there is no delivery to your country";
+    default:
+    return "Sorry, there is no delivery to your country";
 }
 return `Shipping to ${country} will cost ${price} credits`;
 }
